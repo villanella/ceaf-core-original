@@ -1,12 +1,12 @@
 # Метаданные пакета
 $package:
-  seaf-core: # Идентификатор пакета
+  ceaf-changes: # Идентификатор пакета
     # Краткое название пакета
-    name: SEAF
+    name: CEAF Changes
     # Поставщик
-    vendor: Sber
+    vendor: villanella 
     # Описание
-    description: Sber Enterprise Architect Framework
+    description: CEAF Change Management
     # Версия
     version: 1.2.7
     # Зависимости от других пакетов
@@ -16,4 +16,3 @@ $package:
 imports:
   - functions/root.yaml
   - entities/root.yaml
-  - docs/root.yaml
