@@ -1,0 +1,66 @@
+# English locale for Dochub metamodel
+
+entities:
+  aspects:
+    presentations:
+      blank:
+        widgets:
+          summary:
+            title: Aspect Overview
+          components:
+            title: Presented in components
+          contexts:
+            title: Contexts
+          docs:
+            title: Documents
+          hierarchy:
+            title: Aspect in structure
+  #            template: templates/hierarchy-en.puml
+
+
+
+
+  components:
+    presentations:
+      blank:
+        widgets:
+          summary:
+            title: Component Overview
+          docs:
+            title: Documents
+          hierarchy:
+            title: Component in structure
+          #            template: templates/hierarchy-en.puml
+          contexts:
+            title: Contexts
+      #      tree:
+      #        template: templates/tree-en.puml
+
+      summary:
+        source: >
+          (
+            $component_id := $params.component;
+            $lookup(components, $component_id).(
+                [
+                    {
+                        "title": "Identifier",
+                        "content": $component_id
+                    },
+                    {
+                        "title": "Title",
+                        "content": title
+                    },
+                    {
+                        "title": "Description",
+                        "content": description
+                    }
+                ]
+            )
+          )
+
+
+
+#  contexts:
+#    presentations:
+#      tree:
+#        template: templates/contexts-tree-en.puml
