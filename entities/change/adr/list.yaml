@@ -1,9 +1,10 @@
 # Бланк архитектурного решения
+# Not imported because of attr duplicates
 entities:
   seaf.change.adr:
     presentations:
       list:
-        title: Карточка требования
+        title: ADR Card
         type: table
         headers:
           - value: id
@@ -13,25 +14,12 @@ entities:
             width: 5%
             link: link
           - value: moment
-            text: Дата
+            text: Date
             sortable: true
             align: left
             width: 5%
           - value: title
-            text: Название
+            text: Title
             sortable: true
             align: left
             width: 10%
-        source: >
-          (
-              $."seaf.change.adr".$spread().(
-                  $id := $keys()[0];
-                  {
-                      "id": $id,
-                      "moment": *.moment,
-                      "link": "/entities/seaf.change.adr/blank?seaf-adr-id=" & $id,
-                      "title": *.title,
-                      "sort": $toMillis(*.moment)
-                  }
-              )^(sort);
-          )

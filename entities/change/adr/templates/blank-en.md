@@ -3,35 +3,46 @@ id: **{{id}}**
 
 status: **{{status}}**
 
-story: [{{story}}](https://tracker.yandex.ru/{{story}})
-
-# Problem
+## Problem
 {{issue}}
 
-# Goal
+## Decision 
 {{decision}}
 
-# Use cases
-{{#usecases}}
-![{{title}}]({{link}})
-{{/usecases}}
+## Context 
+{{#context}}
+___
+* Domain: **{{area}}**
+* Influence: **{{vector}}**
 
-# Requirements
+{{content}}
+{{/context}}
+
+## Requirements
 {{#requirements}}
 ![{{title}}]({{link}})
 {{/requirements}}
 
-# To be done after
+## Consequences 
+{{#consequences}}
+___
+* Domain: **{{area}}**
+* Influence: **{{vector}}**
+
+{{content}}
+{{/consequences}}
+
+## To be done after
 {{#dependencies}}
 * [{{title}}]({{link}})
 {{/dependencies}}
 
-# Blocks
+## Blocks
 {{#blocked}}
 * [{{title}}]({{link}})
 {{/blocked}}
 
-# Deciders
+## Deciders
 {{#deciders}}
 * {{.}}
 {{/deciders}}

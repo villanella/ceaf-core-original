@@ -3,7 +3,7 @@
 entities:
   seaf.change.adr:
     menu: >
-      (       
+      (
           $append(
               [{
                   "location": "Changes/ADR",
