@@ -9,7 +9,7 @@ $package:
     # Описание
     description: CEAF Change Management En
     # Версия
-    version: 0.0.2
+    version: 1.0.1
     # Зависимости от других пакетов
     dependencies:
       dochub: ">=3.9.0"
