@@ -3,13 +3,13 @@ $package:
   ceaf-changes-en:
     # Идентификатор пакета
     # Краткое название пакета
-    name: CEAF Changes
+    name: CEAF Changes English
     # Поставщик
     vendor: villanella
     # Описание
     description: CEAF Change Management En
     # Версия
-    version: 1.0.1
+    version: 1.0.2
     # Зависимости от других пакетов
     dependencies:
       dochub: ">=3.9.0"
