@@ -13,10 +13,10 @@ $package:
     # Зависимости от других пакетов
     dependencies:
       dochub: ">=3.9.0"
-      ceaf-changes: ">=1.2.6"
+    #  ceaf-changes: ">=1.2.6"    # all dependencies between packages should be set in the project.
 
 imports:
-  - _metamodel_/packages.yaml
+  #- _metamodel_/packages.yaml
   - entities/root.yaml
   - architecture/interface/root.yaml
   #- tests.yaml    # uncomment to test metamodel
